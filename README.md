@@ -1,4 +1,4 @@
-CMPE 280
-An application for Web UI and Design.
-Current Status: 
+CMPE 280 <br/>
+An application for Web UI and Design. <br/>
+Current Status: <br/>
 "Post It" Prototyping.
