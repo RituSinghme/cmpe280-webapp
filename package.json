@@ -1,0 +1,23 @@
+{
+  "name": "cmpe280-webapp",
+  "version": "1.0.0",
+  "description": "a project ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huyvanvo94/cmpe280-webapp.git"
+  },
+  "author": "Huy Vo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huyvanvo94/cmpe280-webapp/issues"
+  },
+  "scripts": {
+    "dev": "nodemon server.js"
+   },
+  "homepage": "https://github.com/huyvanvo94/cmpe280-webapp#readme"
+}
