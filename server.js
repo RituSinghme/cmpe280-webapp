@@ -1,7 +1,10 @@
+'use strict';
 var bodyParser = require('body-parser');
 var express    = require('express');
 var lineReader = require('line-reader');
 var path       = require('path');
+
+const User = require('./public/model/user.js');
 
 // Create the app.
 var app = express();
@@ -18,7 +21,8 @@ app.post('/'+'login-valid',
 
 		var html = 'password: ' + password + ' username: ' + username;
 
-    console.log(html);
+		let user = new User(username, password);
+    	console.log(user.password);
 		res.send(html);
 
 	}
