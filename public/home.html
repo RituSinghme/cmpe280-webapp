@@ -3,8 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+        input[type="search"]{
+            width: 40%;
+            line-height: 20px;
+            margin-top: 1em;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #bbbbbf;
+            position: static;
+        }
+
+        li{
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .ord{
+            background-color: #5190af;
+            float: right;
+        }
+
+
+        li:hover:not(.ord){
+            background-color: #111;
+        }
+    </style>
 </head>
 <body>
+
+<header>
+    <ul id="nag-bar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sale">For Sale</a></li>
+        <li><a href="#rent">For Rent</a></li>
+        <li><a href="#purchase">For Purchase</a></li>
+        <input type="search" placeholder="Search"/>
+        <!--<input type="submit" value="Search"/>-->
+        <!--Order will be reversed-->
+        <li class="ord" id="sign-up"><a href="/sign_up.html">Sign Up</a></li>
+        <li class="ord" id="login"><a href="/login.html">Login</a></li>
+    </ul>
+</header>
+<!--
+    <div class="search">
+        <input type="search" placeholder="Search"/>
+
+    </div> -->
+
 
 </body>
 </html>

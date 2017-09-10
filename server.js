@@ -1,11 +1,8 @@
 'use strict';
 var bodyParser = require('body-parser');
 var express    = require('express');
-var lineReader = require('line-reader');
-var path       = require('path');
-
-const User = require('./public/model/user.js');
-
+var handle = require('./public/util/handle.js');
+var path = require('path');
 // Create the app.
 var app = express();
 
@@ -20,15 +17,18 @@ app.post('/'+'login-valid',
 		var password = req.param('password');
 
 		var html = 'password: ' + password + ' username: ' + username;
-
-		let user = new User(username, password);
-    	console.log(user.password);
-		res.send(html);
-
+        res.send(html);
 	}
 );
 
-
+app.post('/'+'code-post',
+	function (req, res) {
+		var emailAddress = req.param('email');
+		console.log(emailAddress);
+		handle.sendEmail(emailAddress);
+		res.sendFile(path.resolve('public/validation.html'));
+    }
+);
 
 
 app.listen(8080);

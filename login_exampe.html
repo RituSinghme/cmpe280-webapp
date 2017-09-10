@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        fieldset{
+            width: 50%;
+            margin-left:10em;
+        }
+        label {
+            float: left;
+            width: 7em;
+            clear: left;
+            text-align: right;
+            padding-right: 1em;
+        }
+
+        input {
+            float: left;
+        }
+
+        button {
+            display: inline;
+            margin-top: 2em;
+            margin-left: 10em;
+            margin-right: 10em;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<form action = "">
+    <fieldset>
+        <legend>User input</legend>
+        <label>Name:</label>
+        <input type = "text"
+               value = ""
+               id = "name" />
+        <label>Phone number:</label>
+        <input type = "text"
+               value = "(nnn) nnn-nnnn"
+               id = "phone" />
+        <label>Email address:</label>
+        <input type = "text"
+               value = "xxxxx@xxxxx.xxx"
+               id = "email" />
+        <button type = "button">
+            Submit
+        </button>
+    </fieldset>
+</form>
+
+</body>
+</html>
