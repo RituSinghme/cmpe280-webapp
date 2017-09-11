@@ -23,7 +23,14 @@ app.post('/'+'login-valid',
 
 app.post('/'+'code-post',
 	function (req, res) {
+		var firstName = req.param("first_name");
+		var lastName = req.param("last_name");
+		var studentID = req.param("student_id");
 		var emailAddress = req.param('email');
+		var userName = req.param("username");
+		var password = req.param("password");
+
+		
 		console.log(emailAddress);
 		handle.sendEmail(emailAddress);
 		res.sendFile(path.resolve('public/validation.html'));

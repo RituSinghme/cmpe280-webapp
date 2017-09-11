@@ -14,7 +14,7 @@
             margin-top: 1em;
         }
 
-        ul {
+        #nag-bar {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -38,11 +38,58 @@
             background-color: #5190af;
             float: right;
         }
-
-
         li:hover:not(.ord){
             background-color: #111;
         }
+        header{
+            position: static;
+        }
+        /*Listing Products*/
+
+        #products{
+            margin: auto;
+
+        }
+
+        .product{
+            height: 10%;
+            width: 10%;
+        }
+
+        #products{
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+        /*The Images*/
+        .product{
+            width: 100%;
+            height: auto;
+        }
+
+        .desc{
+            font-family: "Roboto", sans-serif;
+            text-align: center;
+            color: #115cd6;
+        }
+
+        .desc: hover{
+            color: #031a3f;
+        }
+
+        div.gallery{
+            margin: 5px;
+            float: left;
+            width: 180px;
+        }
+
+        #head-line{
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            color: #2b3647;
+        }
+
     </style>
 </head>
 <body>
@@ -60,12 +107,30 @@
         <li class="ord" id="login"><a href="/login.html">Login</a></li>
     </ul>
 </header>
-<!--
-    <div class="search">
-        <input type="search" placeholder="Search"/>
 
-    </div> -->
+<main>
 
+    <div id="products">
+        <h2 id="head-line">Listings:</h2>
+        <div class="gallery">
+            <img class="product" src="test_images/bigjava.jpg">
+            <p class="desc">Big Java For Sale!</p>
+        </div>
+        <div class="gallery">
+            <img class="product" src="test_images/bigjava.jpg">
+            <p class="desc">Big Java For Sale!</p>
+        </div>
+        <div class="gallery">
+            <img class="product" src="test_images/bigjava.jpg">
+            <p class="desc">Big Java For Sale!</p>
+        </div>
+        <div class="gallery">
+            <img class="product" src="test_images/bigjava.jpg">
+            <p class="desc">Big Java For Sale!</p>
+        </div>
+    </div>
+
+</main>
 
 </body>
 </html>
